@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "863776772246",
+    "project_id": "wall-tutorials",
+    "storage_bucket": "wall-tutorials.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863776772246:android:667a06adf3d29752c572b7",
+        "android_client_info": {
+          "package_name": "com.example.the_walls"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863776772246-bpubhun1ag7bagtv4chm1nd7s0h5arao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA8yn9N8jIZtAtYEsLsxPG4JTQCoXn6MY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863776772246-bpubhun1ag7bagtv4chm1nd7s0h5arao.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
