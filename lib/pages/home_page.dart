@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:the_walls/components/text_field.dart';
 import 'package:the_walls/components/wall_post.dart';
+import 'package:the_walls/helper/helper_methods.dart';
 import 'package:the_walls/pages/profile_page.dart';
 
 import '../components/drawer.dart';
@@ -94,12 +95,14 @@ class _HomePageState extends State<HomePage> {
                         //get message
                         final post = snapshot.data!.docs[index];
                         return WallPost(
-                            message: post['Message'],
-                            user: post['UserEmail'],
-                            postId: post.id,
-                            likes: List<String>.from(
-                              post['Likes'] ?? [],
-                            ));
+                          message: post['Message'],
+                          user: post['UserEmail'],
+                          postId: post.id,
+                          likes: List<String>.from(
+                            post['Likes'] ?? [],
+                          ),
+                          time: formatDate(post['TimeStamp']),
+                        );
                       },
                     );
                   } else if (snapshot.hasError) {
