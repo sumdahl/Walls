@@ -123,7 +123,7 @@ class _WallPostState extends State<WallPost> {
       margin: const EdgeInsets.only(top: 25, left: 25, right: 25),
       padding: const EdgeInsets.all(25.0),
       decoration: BoxDecoration(
-        color: Colors.grey[200],
+        color: Theme.of(context).colorScheme.primary,
         borderRadius: BorderRadius.circular(8.0),
       ),
       child: Column(
